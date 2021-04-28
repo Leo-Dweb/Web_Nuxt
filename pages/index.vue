@@ -1,211 +1,336 @@
 <template>
   <div>
       <!-- Main 01 -->
-    <div class="primaryweb mb-5" >
-      <h1 class="">
-        Diseñamos y desarrollamos tu crecimiento
-      </h1>
+    <v-container class="primaryweb my-5 img_main01 pa-0" >
+      <v-img
+        class="pa-0"
+        src="img/D-Web_web_Wave.svg">
+            <v-row class="">
+                <v-col sm="12" md="8"> 
+                    <h1 class="pa-4 mx-2 text-center text-sm-h4"
+                  
+                    >
+                      DISEÑAMOS Y DESARROLLAMOS TU CRECIMIENTO
+                    </h1>
+                </v-col>
 
-      <v-row class="">
-          <v-col>
-            <h3 class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam ipsa autem perferendis libero reiciendis culpa incidunt. Distinctio laudantium eos quisquam perspiciatis dolor temporibus quidem amet corporis accusantium quae sapiente inventore quasi?
-            </h3>
-          </v-col>
-          <v-col >
-              <div class="">
-                <v-img
-                    contain
-                    max-width="380"
-                    max-height="250"
-                    class=""
-                    src="img/undraw_progressive_app_m9ms.svg">
-                </v-img>
-              </div>
-          </v-col>
-      </v-row>
-            <!-- Section WAVE -->
-                <Wave/>
-    </div>
-
-  <!-- Main 2 -->
-
-    <v-container class="primaryweb mb-5">
-      <h2 class="text-center my-2 ">ALGUNOS DE NUESTROS SERVICIOS</h2>
-      <div class="d-flex">
-        <!-- CARD 1 -->
-        <v-card
-          class="mx-4 "
-          color="blueweb"
-          width="265px"
-          height="480px">
-          <v-img
-            height="210"
-            width="265"
-            src="https://cdn.vuetifyjs.com/images/cards/cooking.png">
-          </v-img>
-            <div class="ma-1">
-              <v-card-title
-          class="pa-1">
-            Diseño y desarrollo Web
-          <small class="mint--text mb-1">Desarrollo</small>
-          </v-card-title>
-          <v-card-text>
-            <v-row>
-              <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius omnis minus voluptas consectetur obcaecati aperiam quasi earum adipisci provident in id, saepe amet assumenda quisquam.</p>
-              </div>
+                <v-col class="" cols="12" sm="9">
+                  <h2 class="pa-5 mx-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi recusandae, iste quas aliquam rerum, praesentium labore inventore mollitia hic iusto perferendis laboriosam, laudantium esse?
+                  </h2>
+                </v-col>
             </v-row>
-          <v-divider class="mint mt-1" width="256"></v-divider>
-          </v-card-text>
-              <div class="d-flex justify-end mr-2">
-                <v-btn
-                  class=""
-                  outlined
-                  color=""
-                  >Mas Informacion
-                </v-btn>
-              </div>
-            </div>
-        </v-card>
-      </div>
-      <div class=" px-15">
-        <v-btn
-        class="my-4" 
-        block
-        color="mint">Servicios</v-btn>
-      </div>
-
+            
+      </v-img>
     </v-container>
 
-    <!-- Main 03 Tu Proyecto -->
+  <!-- Main 2 CARD -->
     <v-container class="primaryweb mb-5">
-      
-      <h2 class=" ml-5 my-2">TU PROYECTO EN NUESTRAS MANOS</h2>
+        <h2 class="pa-4 text-center">ALGUNOS DE NUESTROS SERVICIOS</h2>
+
+        <!-- CARD 1 -->
+        <v-row class="">
+          <v-col sm="6" md="4">
+            <div class="d-flex justify-center">
+              <v-card
+              class="ma-4"
+              color="blueweb"
+              width="265px"
+              height="500px">
+              <v-img
+                height="210"
+                width="265"
+                src="img/Media.png">
+              </v-img>
+                <div class="ma-1">
+                  <v-card-title
+              class="pa-1">
+                Diseño y desarrollo Web
+              <small class="mint--text mb-1">Desarrollo</small>
+              </v-card-title>
+              <v-card-text
+                class="py-2">
+                  <div>
+                    <p class="mb-2">Leonardo ipsum dolor, sit amet consectetur adipisicing elit. Eius omnis minus voluptas consectetur obcaecati aperiam quasi earum adipisci provident in id, saepe amet assumenda quisquam.</p>
+                  </div>
+              </v-card-text>
+
+              <v-divider class="mint mb-3" width=""></v-divider>
+
+                  <div class="d-flex justify-end mr-2">
+                    <v-btn
+                      class=""
+                      outlined
+                      color=""
+                      small
+                      >Mas Informacion
+                    </v-btn>
+                  </div>
+                </div>
+            </v-card>
+            </div>
+            
+          </v-col>
+          <!-- Card 2 -->
+          <v-col sm="6" md="4">
+            <div class="d-flex justify-center">
+              <v-card
+              class="ma-4"
+              color="blueweb"
+              width="265px"
+              height="500px">
+              <v-img
+                
+                height="210"
+                width="265"
+                src="img/Media.png">
+              </v-img>
+                <div class="ma-1">
+                  <v-card-title
+              class="pa-1">
+                Diseño y desarrollo Web
+              <small class="mint--text mb-1">Desarrollo</small>
+              </v-card-title>
+              <v-card-text
+                class="py-2"            
+              >
+                  <div>
+                    <p class="mb-2">Leonardo ipsum dolor, sit amet consectetur adipisicing elit. Eius omnis minus voluptas consectetur obcaecati aperiam quasi earum adipisci provident in id, saepe amet assumenda quisquam.</p>
+                  </div>
+              </v-card-text>
+
+              <v-divider class="mint mb-3" width=""></v-divider>
+
+                  <div class="d-flex justify-end mr-2">
+                    <v-btn
+                      class=""
+                      outlined
+                      color=""
+                      small
+                      >Mas Informacion
+                    </v-btn>
+                  </div>
+                </div>
+              </v-card>
+            </div>
+          </v-col>
+<!-- Card 3 -->
+          <v-col cols="12" md="4">
+            <div class="d-flex justify-center">
+              <v-card
+              class="ma-4"
+              color="blueweb"
+              width="265px"
+              height="500px">
+              <v-img
+                height="210"
+                width="265"
+                src="img/Media.png">
+              </v-img>
+                <div class="ma-1">
+                  <v-card-title
+              class="pa-1">
+                Diseño y desarrollo Web
+              <small class="mint--text mb-1">Desarrollo</small>
+              </v-card-title>
+              <v-card-text
+                class="py-2"            
+              >
+                
+                  <div>
+                    <p class="mb-2">Leonardo ipsum dolor, sit amet consectetur adipisicing elit. Eius omnis minus voluptas consectetur obcaecati aperiam quasi earum adipisci provident in id, saepe amet assumenda quisquam.</p>
+                  </div>
+              </v-card-text>
+              <v-divider class="mint mb-3" width=""></v-divider>
+
+                  <div class="d-flex justify-end mr-2">
+                    <v-btn
+                      class=""
+                      outlined
+                      color=""
+                      small
+                      >Mas Informacion
+                    </v-btn>
+                  </div>
+
+                </div>
+            </v-card>
+            </div>
+          </v-col>
+
+        </v-row>
+
+      <!-- BTN Service -->
+      <div class="btn-box px-16">
+        <modalsale color="mint" textBtn="Servicios"  :block="true"/>
+        
+      </div>
+    </v-container>
+    <!-- Main 03 Tu Proyecto -->
+    <v-container class="projects primaryweb mb-5">
+      <h2 class="pa-4 text-center">TU PROYECTO EN NUESTRAS MANOS</h2>
       <!-- part1 -->
-      <v-row>
-        <v-col>
-            <div class="d-flex">
-              <div class="px-10 py-5 mr-10 "> 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nobis eos deleniti corporis, voluptates perspiciatis suscipit voluptatibus temporibus impedit amet ullam incidunt ad corrupti ipsum et quod esse, nisi, exercitationem laboriosam optio. Aliquam facere perspiciatis fuga ad dolor, delectus ut impedit molestias laboriosam quod, quis excepturi. Delectus, deserunt culpa.</p>
-              </div>
-          <div class="pa-5 mr-10">
-            <v-img
-              height="150"
-              width="150"
-              src="https://cdn.vuetifyjs.com/images/cards/cooking.png">
+      <v-row class="align-center py-3" no-gutters> 
+        <v-col class="" cols="12" sm="6" md="4">
+          <div class="d-flex justify-center">
+              <v-img
+                contain
+                max-width="280"
+                max-height="200"
+                class=""
+                src="img/web-design.png">
             </v-img>
           </div>
-        </div>
         </v-col>
+        <v-col class=""  cols="12" sm="6" md="8"> 
+          <div> 
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis quia possimus aperiam tenetur aspernatur sed minima tempore quisquam deleniti perspiciatis at optio necessitatibus mollitia consequatur earum aliquid, reiciendis, repellat voluptatem. Aliquam cumque perferendis quis harum nobis suscipit, illo error?</p>
+          </div>
+        </v-col>
+        
       </v-row>
       <!-- part2 -->
-      <v-row>
-        <v-col>
-            <div class="d-flex">
-              <div class="px-10 py-5 mr-10 "> 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nobis eos deleniti corporis, voluptates perspiciatis suscipit voluptatibus temporibus impedit amet ullam incidunt ad corrupti ipsum et quod esse, nisi, exercitationem laboriosam optio. Aliquam facere perspiciatis fuga ad dolor, delectus ut impedit molestias laboriosam quod, quis excepturi. Delectus, deserunt culpa.</p>
-              </div>
-          <div class="pa-5 mr-10">
-            <v-img
-              height="150"
-              width="150"
-              src="https://cdn.vuetifyjs.com/images/cards/cooking.png">
+      <v-row class="align-center py-3" no-gutters>
+        <v-col class="order-2" cols="12" sm="6" md="8">
+          <div> 
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis quia possimus aperiam tenetur aspernatur sed minima tempore quisquam deleniti perspiciatis at optio necessitatibus mollitia consequatur earum aliquid, reiciendis, repellat voluptatem. Aliquam cumque perferendis quis harum nobis suscipit, illo error?</p>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="6" md="4">
+          <div class="d-flex justify-center">
+              <v-img
+              contain
+              max-width="280"
+              max-height="200"
+              class=""
+              src="img/responsive-design.png">
             </v-img>
           </div>
-        </div>
         </v-col>
       </v-row>
       <!-- part3 -->
-      <v-row>
-        <v-col>
-            <div class="d-flex">
-              <div class="px-10 py-5 mr-10 "> 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nobis eos deleniti corporis, voluptates perspiciatis suscipit voluptatibus temporibus impedit amet ullam incidunt ad corrupti ipsum et quod esse, nisi, exercitationem laboriosam optio. Aliquam facere perspiciatis fuga ad dolor, delectus ut impedit molestias laboriosam quod, quis excepturi. Delectus, deserunt culpa.</p>
-              </div>
-          <div class="pa-5 mr-10">
-            <v-img
-              height="150"
-              width="150"
-              src="https://cdn.vuetifyjs.com/images/cards/cooking.png">
+      <v-row class="align-center py-3" no-gutters>
+        <v-col class="" cols="12" sm="6" md="4">
+          <div class="d-flex justify-center">
+              <v-img
+              contain
+              max-width="280"
+              max-height="200"
+              class=""
+              src="img/promocion.png">
             </v-img>
           </div>
-        </div>
         </v-col>
+        <v-col class="" cols="12" sm="6" md="8">
+          <div class=""> 
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis quia possimus aperiam tenetur aspernatur sed minima tempore quisquam deleniti perspiciatis at optio necessitatibus mollitia consequatur earum aliquid, reiciendis, repellat voluptatem. Aliquam cumque perferendis quis harum nobis suscipit, illo error?</p>
+          </div>
+        </v-col>
+        
       </v-row>
-      
     </v-container>
 
   <!-- Main 04 NOSOTROS -->
-    <v-container class="primaryweb pa-5 mb-5">
+    <v-container class="about-box primaryweb mb-5">
+      <div id="about__direct" class="d-inline-flex pa-4"><h2>¿Por qué <span class="naranja--text">D-Web</span>?</h2></div>
+        
+        <v-row class="align-center">
+          <v-col cols="12" sm="5" md="6">
+              <div class="px-2" >
+                <p>Leonardo ipsum dolor sit amet consectetur adipisicing elit. Sit asperiores dolorem saepe pariatur a consequuntur, repellat cupiditate? Officia, voluptatum in?</p>
 
-      <div class="d-inline-flex" ><h2>¿Por qué <span class="naranja--text" >D-Web</span>?</h2></div>
-        <v-row>
-          <v-col>
-              <div class="" >
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit asperiores dolorem saepe pariatur a consequuntur, repellat cupiditate? Officia, voluptatum in?</p>
-
-                <h3 class="naranja--text">¡Nuestro Propósito!</h3>
+                <h3 class="naranja--text pt-2">¡Nuestro Propósito!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur odio maxime autem temporibus impedit provident repellat repellendus, quod nisi?</p>
               </div>
           </v-col>
-          <v-col>
+          <v-col class="pa-0" cols="12" sm="7" md="6">
+            <div class="d-flex justify-center">
               <v-img
-                height="220"
-                width="280"
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png">
+                contain
+                max-width="380"
+                min-height="100"
+                src="img/d-web_team.png">
               </v-img>
-          
+            </div>
           </v-col>
         </v-row>
       
-          <h4 class="text-center my-3">Nuestro punto de diferenciación debe ir en esta sección de etiqueta</h4>
-        
-        <v-container class="dark">
+          <h3 class="text-center pt-4 my-4">Nuestro punto de diferenciación debe ir en esta sección de etiqueta</h3>
+          
+        <v-container class="generated_value">
               <h3 class="naranja--text text-center py-3 ">ASÍ GENERAMOS VALOR</h3>
-          <v-row>
-            <v-col class="mb-5">
-              <div class="d-flex justify-center text-center ">
+
+          <v-row class="align-center mx-5"> 
+            <v-col :class="justifyC" cols="12" sm="4">
                 <div>
-                  <v-img max-width="100" height="100" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+                  <v-img max-width="200" contain src="img/DWeb_colaboracion.svg"></v-img>
                   <h4>Colaboración</h4>
                 </div>
+            </v-col>
+            <v-col :class="justifyC" cols="12" sm="4">
                 <div>
-                  <v-img max-width="100" height="100" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+                  <v-img max-width="200" contain src="img/DWeb_creatividad.svg"></v-img>
                   <h4>Innovación</h4>
                 </div>
-                <div>
-                  <v-img max-width="100" height="100" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+            </v-col>
+            <v-col :class="justifyC" cols="12" sm="4">
+              <div>
+                  <v-img max-width="200" src="img/DWeb_crecimiento.svg" contain></v-img>
                   <h4>Crecimiento</h4>
                 </div>
-                
-              </div>
             </v-col>
           </v-row>
         </v-container>
-        
     </v-container>
   </div>
 </template>
 
-
-
 <script>
+//import Modalbtn from '../components/Modalbtn.vue'
+import Modalsale from '../components/Modalsale.vue'
 import Wave from '../components/Wave'
 
+
 export default {
-  
+  props:{
+
+  },
+  data (){
+    return{
+      justifyC: ['d-flex justify-center', 'text-center'], 
+      
+    }
+  },
   components: {
     Wave,
-  }
+    //Modalbtn,
+    Modalsale
+  },
+  methods:{
+      
+    },
 }
+
 </script>
 
-
 <style>
-  .img_main01 {
-    background: linear-gradient(90deg, #000810 0%, #35495E 100%);
+  
+  .projects p{
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0px 12px;
   }
+
+  .about-box p{
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .generated_value{
+    max-width: 800px;
+    min-height: 100px;
+    margin-bottom: 8px;
+    background-color: #333333;
+    border: 2px solid #F7931E;
+  }
+  
 </style>
-
-
