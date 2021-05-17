@@ -7,7 +7,7 @@
         src="img/D-Web_web_Wave.svg">
             <v-row class="">
                 <v-col sm="12" md="8"> 
-                    <h1 class="pa-4 mx-2 text-center text-sm-h4"
+                    <h1 class="pa-4 mx-2 text-center"
                   
                     >
                       DISEÑAMOS Y DESARROLLAMOS TU CRECIMIENTO
@@ -15,9 +15,9 @@
                 </v-col>
 
                 <v-col class="" cols="12" sm="9">
-                  <h2 class="pa-5 mx-6">
+                  <p class="pa-5 mx-6">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi recusandae, iste quas aliquam rerum, praesentium labore inventore mollitia hic iusto perferendis laboriosam, laudantium esse?
-                  </h2>
+                  </p>
                 </v-col>
             </v-row>
             
@@ -161,9 +161,8 @@
         </v-row>
 
       <!-- BTN Service -->
-      <div class="btn-box px-16">
+      <div class="btn-box px-16 py-3">
         <modalsale color="mint" textBtn="Servicios"  :block="true"/>
-        
       </div>
     </v-container>
     <!-- Main 03 Tu Proyecto -->
@@ -286,10 +285,7 @@
 </template>
 
 <script>
-//import Modalbtn from '../components/Modalbtn.vue'
 import Modalsale from '../components/Modalsale.vue'
-import Wave from '../components/Wave'
-
 
 export default {
   props:{
@@ -302,8 +298,6 @@ export default {
     }
   },
   components: {
-    Wave,
-    //Modalbtn,
     Modalsale
   },
   methods:{

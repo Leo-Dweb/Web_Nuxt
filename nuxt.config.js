@@ -13,9 +13,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 
-        // Font Awesome
-      { rel: 'stylesheet', href:'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }, 
-      
+    // Google Fonts - Icons
+      { rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons' },
+    //  Google Fonts
+      { rel: 'stylesheet', href:'https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap' }
+
     ]
   },
 

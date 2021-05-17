@@ -1,26 +1,34 @@
 <template>
     <div>
-        <h1>Pagina de contacto</h1>
-        <v-container class="d-flex justify-space-between">
-            <div >
-                Area de slider
-            </div>
-            <div>
-                <v-form>
-                    
-                </v-form>
-            </div>
         
+        <v-container>
+            <v-row class="justify-center">
+                <!-- CAROUSEL -->
+                <v-col cols="12" sm="8" xl="12">
+                    <carousel-service/>
+                </v-col>
+                <!-- Form -->
+                <v-col cols="12" sm="4" xl="4">
+                    <form-contac/>
+                </v-col>
+            
+            </v-row>
         </v-container>
-        <Wave/>
+        
     </div>
 </template>
 
 <script>
-import Wave from "../components/Wave";
+import CarouselService from '../components/CarouselService.vue'
+import FormContac from '../components/FormContac.vue'
+
+
 export default {
+
     components:{
-        Wave,
-    }
+        FormContac,
+        CarouselService
+    },
+    layout: 'form'
 }
 </script>
