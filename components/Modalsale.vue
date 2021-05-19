@@ -10,9 +10,11 @@
                 :small="small"
                 :color="color"
                 :text="text"
+                :plain="plain"
                 v-bind="attrs"
                 v-on="on"
-            >{{ textBtn }}</v-btn>
+            >
+            <v-icon size="18" class="mr-2" >{{textIcon}}</v-icon>{{ textBtn }}</v-btn>
             </template>
             <!-- BODY Dialog -->
             <template v-slot:default="dialog">
@@ -33,7 +35,7 @@
                                 max-width="300"
                                 min-height="150"
                                 contain
-                                src="img/DWeb_colaboracion.svg">
+                                src="/img/DWeb_colaboracion.svg">
                             </v-img>
                         </div>
                         <div class="text-center white--text">
@@ -72,9 +74,11 @@ export default {
     props: {
         textBtn: String,
         textIcon: String,
+        textIcon: String,
         color: String,
         block: Boolean,
         text: Boolean,
+        plain: Boolean,
         small: Boolean,
         link: Boolean
 

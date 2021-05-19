@@ -4,11 +4,11 @@
         <v-container>
             <v-row class="justify-center">
                 <!-- CAROUSEL -->
-                <v-col cols="12" sm="8" xl="12">
+                <v-col cols="12" sm="6" md="7" xl="12">
                     <carousel-service/>
                 </v-col>
                 <!-- Form -->
-                <v-col cols="12" sm="4" xl="4">
+                <v-col cols="12" sm="6" md="5" xl="5">
                     <form-contac/>
                 </v-col>
             

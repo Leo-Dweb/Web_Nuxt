@@ -52,9 +52,9 @@ export default {
     data (){
         return{
             direct: [ 
-                { title: 'Facebook', site: 'https://facebook.com',  icon: '/icons/facebook.png'},
-                { title: 'Gmail', site: 'https://gmail.com', icon: '/icons/gmail.png'},
-                { title: 'WhatsApp', site: 'https://whatsapp.com', icon: '/icons/whatsapp.png'}
+                { title: 'Facebook', site: 'https://facebook.com',  icon: '/icons/facebook.svg'},
+                { title: 'Gmail', site: 'https://gmail.com', icon: '/icons/gmail.svg'},
+                { title: 'WhatsApp', site: 'https://whatsapp.com', icon: '/icons/whatsapp.svg'}
             ],
             año: new Date().getFullYear()
             

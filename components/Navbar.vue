@@ -6,7 +6,7 @@
             <!-- ICON Hamburger -->
             <v-app-bar-nav-icon 
                 @click="drawer = !drawer"
-                class="d-flex d-sm-none"    
+                class="d-flex d-md-none"    
             ></v-app-bar-nav-icon>
 
             <!-- IMG -->
@@ -21,13 +21,15 @@
                 </NuxtLink>
             </div>
 
-            <!-- Routes -->
-            <v-list-item class="container d-none d-sm-flex align-self-center justify-end  " style="height: 50px">
-                <v-btn order="2" v-for="(item, index) of linkNav" :key="index" 
-                :to="item.link" text small color="">
-                {{ item.title }}
+            <!-- Routes Link-->
+            <v-list-item class="container d-none d-md-flex align-self-center justify-end  " style="height: 50px">
+                <v-btn 
+                    class="mr-1" order="2"
+                    v-for="(item, index) of linkNav" :key="index" 
+                    :to="item.link" plain small color="">
+                    <v-icon class="mr-2" size="18" >{{item.icon}}</v-icon> {{ item.title }}
                 </v-btn>
-                <modalsale  textBtn="Servicios" :text="true" :small="true" :color="'mint'"/>
+                <modalsale  textBtn="Servicios" textIcon="home_repair_service" :plain="true" :small="true" :color="''"/>
             </v-list-item>
         </v-app-bar>
         <!-- END NAVBAR -->
