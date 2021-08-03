@@ -2,3 +2,9 @@ main{
     font-family: 'KoHo', sans-serif;
     background-color: #35495E;
 }
+
+
+main p::selection{
+    background: #42B883;
+    color: #000000;
+}

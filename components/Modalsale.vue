@@ -1,5 +1,6 @@
 <template>
-        <v-dialog
+    <div>
+        <v-dialog app
             transition="slide-x-transition"
             max-width="600">
             <!-- BTN Dialog -->
@@ -9,12 +10,15 @@
                 :block="block"
                 :small="small"
                 :color="color"
+                :icon="icon"
                 :text="text"
                 :plain="plain"
                 v-bind="attrs"
                 v-on="on"
             >
-            <v-icon size="18" class="mr-2" >{{textIcon}}</v-icon>{{ textBtn }}</v-btn>
+                <v-icon size="24"> {{textIcon}} </v-icon> {{ textBtn }} 
+            
+            </v-btn>
             </template>
             <!-- BODY Dialog -->
             <template v-slot:default="dialog">
@@ -61,6 +65,7 @@
             </v-card>
             </template>
         </v-dialog>       
+    </div>
 </template>
 <script>
 // import Modalbtn from './Modalbtn.vue'
@@ -74,13 +79,15 @@ export default {
     props: {
         textBtn: String,
         textIcon: String,
-        textIcon: String,
         color: String,
         block: Boolean,
         text: Boolean,
+        icon: Boolean,
         plain: Boolean,
         small: Boolean,
-        link: Boolean
+        link: Boolean,
+        
+
 
     },
     methods:{

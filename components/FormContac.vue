@@ -8,29 +8,39 @@
             <div>
                 <v-form> 
                 <!-- INPUT NAME BUSINESS-->
-                <v-text-field
-                    background-color="dark"
-                    dense
-                    color="mint"
-                    type="text"
-                    label="Nombre / Empresa"
-                    outlined
-                    placeholder="Ingresar nombre de Empresa"
-                ></v-text-field>
+                <ValidationProvider rules="required|minmax:3,25" mode="eager" name="Nombre" v-slot="{errors, valid}">
+                    <v-text-field
+                        v-model="name"
+                        :mint="valid"
+                        :error-messages="errors"
+                        type="text" required
+                        outlined
+                        background-color="dark" 
+                        dense color="mint" 
+                        label="Nombre / Empresa" 
+                        placeholder="Ingresar nombre de Empresa"
+                    ></v-text-field>
+                </ValidationProvider>
                 <!-- INPUT ACTIVITY -->
-                <v-combobox
-                    :items="activity"
-                    clearable
-                    
-                    background-color="dark"
-                    color="mint"
-                    item-color="mint"
-                    label="Actividad de la Empresa"
-                    placeholder="Seleccionar actividad"
-                    multiple
-                    outlined
-                    dense
-                    />
+                <ValidationProvider rules="required" mode="lazy" name="Selección" v-slot="{errors, valid}">
+                    <v-select
+                        v-model="activitySelect"
+                        :mint="valid"
+                        :error-messages="errors"
+                        :items="activitys"
+                        required
+                        clearable
+                        background-color="dark"
+                        color="mint"
+                        item-color="mint"
+                        label="Actividad de la Empresa"
+                        placeholder="Seleccionar actividad"
+                        multiple
+                        outlined
+                        dense
+                        ></v-select>
+
+                </ValidationProvider>
                 <!-- INPUT NAME CONTACT-->
                 <v-text-field
                     background-color="dark"
@@ -118,10 +128,24 @@
 </template>
 
 <script>
+import { ValidationProvider } from "vee-validate";
+
 export default {
+    components:{
+        ValidationProvider
+    },
+
+
     data(){
         return{
-            activity: [ 'Producción', 'Comercial', 'Servicios', 'Mixta'],
+            // Input-Data
+            name: '',
+            activitySelect: '',
+
+
+
+            activitys: ['Producción', 'Comercial', 'Servicios', 'Mixta'],
+            
             servicesdev:[
                 {name:'Servicio 1', color:'mint'},
                 {name:'Servicio 2', color:'mint'},

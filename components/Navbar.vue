@@ -1,8 +1,7 @@
 <template>
     <div>
         <!-- NAVBAR -->
-        <v-app-bar app absolute flat color="dark" height="100"
-            >
+        <v-app-bar app absolute flat color="dark" height="100">
             <!-- ICON Hamburger -->
             <v-app-bar-nav-icon 
                 @click="drawer = !drawer"
@@ -10,7 +9,7 @@
             ></v-app-bar-nav-icon>
 
             <!-- IMG -->
-            <div class="container px-2 d-flex justify-start" >
+            <div class="container px-2 d-flex justify-start ml-4" >
                 <NuxtLink to="/">
                     <v-img 
                     contain
@@ -22,21 +21,38 @@
             </div>
 
             <!-- Routes Link-->
-            <v-list-item class="container d-none d-md-flex align-self-center justify-end  " style="height: 50px">
+            <v-list-item class="container d-none d-md-flex align-self-center justify-end mr-4">
+                <v-divider vertical class="mint mr-2" ></v-divider>
                 <v-btn 
-                    class="mr-1" order="2"
-                    v-for="(item, index) of linkNav" :key="index" 
-                    :to="item.link" plain small color="">
-                    <v-icon class="mr-2" size="18" >{{item.icon}}</v-icon> {{ item.title }}
+                    v-for="(item, index) in linkNav" :key="index"
+                    :to="item.link"
+                    class="mr-4" 
+                    icon
+                    plain>
+                    <v-tooltip bottom color="mint">
+                        <template v-slot:activator="{ on, attrs }">
+                                <v-icon
+                                    v-bind="attrs"
+                                    v-on="on"
+                                    size="24" >{{item.icon}}</v-icon>
+                        </template>
+                        <span>{{item.title}}</span>
+                    </v-tooltip>
                 </v-btn>
-                <modalsale  textBtn="Servicios" textIcon="home_repair_service" :plain="true" :small="true" :color="''"/>
+                <v-tooltip bottom color="mint">
+                    <template v-slot:activator="{ on, attrs }">
+                        <div v-bind="attrs" v-on="on">
+                            <Modalsale textIcon="home_repair_service" :icon="true" :plain="true"/>
+                        </div>
+                    </template>
+                    <span>Servicios</span>
+                </v-tooltip>
             </v-list-item>
         </v-app-bar>
         <!-- END NAVBAR -->
 
         <!-- DRAWER -->
         <v-navigation-drawer app 
-            color=""
             temporary
             v-model="drawer">
             
@@ -47,10 +63,8 @@
                         min-height="70"
                     ></v-img>
                 </v-list-item-content>
-
             </v-list-item>
             <v-divider class="mint" ></v-divider>
-
                 <v-list>
                     <v-list-item link
                         v-for="(item, index) in linkNav" :key="index"
@@ -65,7 +79,7 @@
                     <v-list-item>
                         <v-list-item-title class="d-flex align-center">
                             <span class="material-icons mr-4"> home_repair_service </span> 
-                            <modalsale textBtn="Servicios" :text="false" :small="true" :color="'mint'"/>
+                            <modalsale textBtn="Servicios" :small="true" :color="'mint'"/>
                         </v-list-item-title>
                     </v-list-item>
                     <!-- END BTN -->
@@ -94,7 +108,3 @@ export default {
     }
 }
 </script>
-    
-<style>
-    
-</style>

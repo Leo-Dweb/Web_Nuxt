@@ -26,7 +26,7 @@
 
   <!-- Main 2 CARD -->
     <v-container class="primaryweb mb-5">
-        <h2 class="pa-4 text-center">ALGUNOS DE NUESTROS SERVICIOS</h2>
+        <h2 class="pa-4 text-center">NUESTROS SERVICIOS</h2>
 
         <!-- CARD 1 -->
         <v-row class="">
@@ -162,8 +162,10 @@
 
       <!-- BTN Service -->
       <div class="btn-box px-16 py-3">
-        <modalsale color="mint" textBtn="Servicios"  :block="true"/>
+
+        <Modalsale color="mint" textBtn="Servicios"  :block="true"/>
       </div>
+
     </v-container>
     <!-- Main 03 Tu Proyecto -->
     <v-container class="projects primaryweb mb-5">
@@ -288,6 +290,10 @@
 import Modalsale from '../components/Modalsale.vue'
 
 export default {
+  components: {
+    Modalsale
+  },
+  
   props:{
 
   },
@@ -297,9 +303,7 @@ export default {
       
     }
   },
-  components: {
-    Modalsale
-  },
+  
   methods:{
       
     },
