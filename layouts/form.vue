@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style>
+/* Background */
     .maintag{
         background-image: url(/img/wave.png);
         background-repeat: no-repeat;

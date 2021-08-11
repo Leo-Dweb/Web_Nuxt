@@ -7,9 +7,7 @@
         src="img/D-Web_web_Wave.svg">
             <v-row class="">
                 <v-col sm="12" md="8"> 
-                    <h1 class="pa-4 mx-2 text-center"
-                  
-                    >
+                    <h1 class="pa-4 mx-2 text-center">
                       DISEÑAMOS Y DESARROLLAMOS TU CRECIMIENTO
                     </h1>
                 </v-col>
@@ -250,7 +248,7 @@
                 contain
                 max-width="380"
                 min-height="100"
-                src="img/d-web_team.png">
+                src="">
               </v-img>
             </div>
           </v-col>
@@ -290,20 +288,32 @@
 import Modalsale from '../components/Modalsale.vue'
 
 export default {
-  components: {
-    Modalsale
-  },
   
-  props:{
-
-  },
+  
   data (){
     return{
       justifyC: ['d-flex justify-center', 'text-center'], 
       
     }
   },
-  
+
+  head(){
+    return{
+      title: 'Inicio', 
+      meta: [
+        {
+          hid:'description',
+          name: 'description',
+          content:'Pendiemte',
+        }
+      ]
+      
+    }
+  },
+  components: {
+    Modalsale
+          },
+
   methods:{
       
     },

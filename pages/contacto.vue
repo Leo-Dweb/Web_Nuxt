@@ -24,6 +24,19 @@ import FormContac from '../components/FormContac.vue'
 
 
 export default {
+    head(){
+        return {
+            title: 'Contacto',
+
+            meta: [
+                {
+                    hid: '',
+                    name:'',
+                    content: ''
+                }
+            ]
+        }
+    },
 
     components:{
         FormContac,

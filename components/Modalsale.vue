@@ -16,7 +16,7 @@
                 v-bind="attrs"
                 v-on="on"
             >
-                <v-icon size="24"> {{textIcon}} </v-icon> {{ textBtn }} 
+                <img class="icon_nav" :src="textIcon" > {{ textBtn }} 
             
             </v-btn>
             </template>
@@ -51,15 +51,12 @@
                 <v-card-actions class="justify-end">
                     <v-btn
                         class="dark"
-                        title="Cerrar"
+                        title="Salir"
                         text
                         @click="dialog.value = false"
                         icon
-                        elevation="4"
-                        >
-                        <v-icon>
-                            cancel
-                        </v-icon>
+                        dense
+                        > x
                     </v-btn>
                 </v-card-actions>
             </v-card>
@@ -94,7 +91,3 @@ export default {
     }
 }
 </script>
-
-<style>
-    
-</style>

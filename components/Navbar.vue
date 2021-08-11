@@ -1,40 +1,44 @@
 <template>
     <div>
         <!-- NAVBAR -->
-        <v-app-bar app absolute flat color="dark" height="100">
+        <v-app-bar app absolute flat color="dark" height="65">
             <!-- ICON Hamburger -->
-            <v-app-bar-nav-icon 
-                @click="drawer = !drawer"
-                class="d-flex d-md-none"    
-            ></v-app-bar-nav-icon>
-
+            <div 
+            @click="drawer = !drawer"
+            class="d-flex d-md-none drawer_menu"
+            > 
+                <img class="icon_nav" src="/icons/navbar_drawer/Menu_d-web.svg">
+            </div>
+            
             <!-- IMG -->
-            <div class="container px-2 d-flex justify-start ml-4" >
+            <div class=" d-flex justify-start" >
                 <NuxtLink to="/">
                     <v-img 
+                    title="Página de Inicio"
                     contain
-                    src="/img/Dweb_Navbar.svg"
-                    max-width="170"
-                    max-height="100"
+                    src="/img_d-web.svg"
+                    max-width="150"
+                    max-height="55"
                     ></v-img>
                 </NuxtLink>
             </div>
 
             <!-- Routes Link-->
             <v-list-item class="container d-none d-md-flex align-self-center justify-end mr-4">
-                <v-divider vertical class="mint mr-2" ></v-divider>
+                <v-divider vertical class="mint mx-2 " ></v-divider>
                 <v-btn 
                     v-for="(item, index) in linkNav" :key="index"
                     :to="item.link"
-                    class="mr-4" 
+                    class="mx-1"
                     icon
                     plain>
                     <v-tooltip bottom color="mint">
                         <template v-slot:activator="{ on, attrs }">
-                                <v-icon
-                                    v-bind="attrs"
-                                    v-on="on"
-                                    size="24" >{{item.icon}}</v-icon>
+                                <img
+                                v-bind="attrs"
+                                v-on="on"
+                                class="icon_nav"
+                                :src="item.icon"> 
                         </template>
                         <span>{{item.title}}</span>
                     </v-tooltip>
@@ -42,7 +46,7 @@
                 <v-tooltip bottom color="mint">
                     <template v-slot:activator="{ on, attrs }">
                         <div v-bind="attrs" v-on="on">
-                            <Modalsale textIcon="home_repair_service" :icon="true" :plain="true"/>
+                            <Modalsale textIcon="/icons/navbar_drawer/Services_d-web.svg" :icon="true" :plain="true"/>
                         </div>
                     </template>
                     <span>Servicios</span>
@@ -58,12 +62,13 @@
             
             <v-list-item>
                 <v-list-item-content class="justify-center">
-                    <v-img src="/img/Dweb_Navbar.svg" contain 
-                        max-width="150"
+                    <v-img src="/img_d-web.svg" contain 
+                        max-width="190"
                         min-height="70"
                     ></v-img>
                 </v-list-item-content>
             </v-list-item>
+            <!-- divider -->
             <v-divider class="mint" ></v-divider>
                 <v-list>
                     <v-list-item link
@@ -71,14 +76,16 @@
                         :to="item.link">
                             <v-list-item-content>
                                 <v-list-item-title class="d-flex align-center">
-                                    <span class="material-icons mr-4"> {{item.icon}} </span> {{item.title}}
+                                    <img class="icon_nav mr-4" :src="item.icon"> {{item.title}}
                                 </v-list-item-title>
                             </v-list-item-content>
                     </v-list-item>
                     <!-- BTN SERVICE -->
                     <v-list-item>
                         <v-list-item-title class="d-flex align-center">
-                            <span class="material-icons mr-4"> home_repair_service </span> 
+                            <!-- Icon section -->
+                            <img class="icon_nav mr-4" src="/icons/navbar_drawer/Services_d-web.svg">
+                            <!-- Icon section END -->
                             <modalsale textBtn="Servicios" :small="true" :color="'mint'"/>
                         </v-list-item-title>
                     </v-list-item>
@@ -97,9 +104,9 @@ export default {
     data(){
         return{
             linkNav: [
-                {title: 'Inicio', link:'/', icon:'home'},
-                {title: 'Contacto', link:'/contacto', icon:'contact_mail'},
-                {title: 'Nosotros', link:'/#about__direct', icon:'groups'},
+                {title: 'Inicio', link:'/', icon:'/icons/navbar_drawer/Home_d-web.svg'},
+                {title: 'Contacto', link:'/contacto', icon:'/icons/navbar_drawer/Contacto_noti_d-web.svg'},
+                {title: 'Nosotros', link:'/#about__direct', icon:'/icons/navbar_drawer/About_us_d-web.svg'},
                 
             ],
             drawer: false
@@ -108,3 +115,13 @@ export default {
     }
 }
 </script>
+
+<style>
+.icon_nav{
+    max-width: 24px;
+    min-height: 24px;
+}
+.drawer_menu{
+    cursor: pointer;
+}
+</style>

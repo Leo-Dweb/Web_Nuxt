@@ -2,7 +2,7 @@
     <div>
         <div class="mb-4">
             <div>
-                <h1>Desarrollo Web</h1>
+                <h1> {{ title }} </h1>
             </div>
             <div class="d-flex justify-end">
                 <v-btn class=""
@@ -36,7 +36,7 @@
                     <v-col class="d-flex justify-center" cols="12" sm="6">
                         <v-img
                             contain 
-                            src="../img/d-web_Team.png"
+                            src=""
                             max-width="350"
                             min-height="200"
                         ></v-img>
@@ -50,7 +50,22 @@
 export default {
     data(){
         return{
-            
+            title: 'Desarrollo Web',
+        }
+    },
+
+    head(){
+        return {
+            title: this.title,
+
+            meta: [
+                {
+                    hid: 'description',
+                    name:'description',
+                    content: ''
+
+                }
+            ]
         }
     }
 }

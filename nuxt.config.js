@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - project_d-web',
-    title: 'Inicio',
+    titleTemplate: '%s | D-Web',
+    title: '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +16,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 
     // Google Fonts - Icons
-      { rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      // { rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      
     //  Google Fonts
       { rel: 'stylesheet', href:'https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap' }
 
